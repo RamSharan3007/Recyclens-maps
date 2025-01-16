@@ -8,7 +8,8 @@ app.use(express.static('public'));
 app.get('/api/recycling-centers', async (req, res) => {
 
   try {
-    const response = await axios.get(`https://api.geoapify.com/v2/places?categories=service.recycling&filter=rect:79.44813424326298,13.601608593449258,80.76997020744653,12.376098784128969&limit=20&apiKey=85b935f9a74b4e2b8b190e61c5408510
+    const response = await axios.get(`https://api.geoapify.com/v2/places?categories=service.recycling&filter=rect:79.98048324980594,13.284098146633246,80.443270580005,12.855161361489815&limit=20&apiKey=85b935f9a74b4e2b8b190e61c5408510
+
 `);
     res.json(response.data);
   } catch (error) {
